@@ -1,0 +1,32 @@
+###Pets Index
+
+GET http://localhost:3000/pets
+
+###Pets Create
+
+POST http://localhost:3000/pets
+Content-Type: application/json
+
+{
+  "species": "head crab",
+  "name": "Lamarr",
+  "personality": "trickster",
+  "age": 2
+}
+
+###Pets Show
+
+GET http://localhost:3000/pets/3
+
+###Pets Update
+
+PATCH http://localhost:3000/pets/4
+Content-Type: application/json
+
+{
+  "personality": "snoozy"
+}
+
+###Pets Delete
+
+DELETE http://localhost:3000/pets/4
